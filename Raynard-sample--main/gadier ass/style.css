@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(java.webp) no-repeat center fixed;
+    background-size: cover;
+}
+
+.container-for-login {
+    background-color: rgba(95, 92, 92, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    flex-direction: column; /* Added this line */
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h5 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="text"], input[type="password"], button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+    border-color: blue;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgb(23, 120, 223);
+    transform: scale(1.050);
+}
+
+button:last-child {
+    margin-bottom: 0;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder {
+    font-size: 0.8em;
+}
+
+input[type="text"]:hover::placeholder, input[type="password"]:hover::placeholder {
+    font-size: 0.7em;
+}
+
+label {
+    align-self: flex-start; /* Added this line */
+}
